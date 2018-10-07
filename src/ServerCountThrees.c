@@ -44,7 +44,6 @@ void doprocessing (int sock)
 
 	fprintf(stdout,"%d",threesCount);
 	fflush(stdout);
-
 	sprintf(buffer,"ServerCountThrees Response: %d\n",threesCount);
 	int msgLength = strlen(buffer);
     n = write(sock,buffer,msgLength);
