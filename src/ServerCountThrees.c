@@ -31,6 +31,7 @@ void doprocessing (int sock)
         perror("ERROR reading from socket");
         exit(1);
     }
+
     printf("ServletCountThrees Received Input: %s\n",buffer);
 
 	ptr_threesFile = fopen("threesData.bin","rb");
